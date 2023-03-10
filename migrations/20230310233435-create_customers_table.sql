@@ -1,6 +1,6 @@
 
 -- +migrate Up
-CREATE TABLE customers (
+CREATE TABLE if not exists customers (
    id INT PRIMARY KEY AUTO_INCREMENT,
    first_name VARCHAR(45),
    last_name VARCHAR(45) NOT NULL,

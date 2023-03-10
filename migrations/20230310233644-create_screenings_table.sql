@@ -1,6 +1,6 @@
 
 -- +migrate Up
-CREATE TABLE screenings (
+CREATE TABLE if not exists screenings (
 
                             id INT PRIMARY KEY AUTO_INCREMENT,
                             film_id INT NOT NULL,

@@ -1,6 +1,6 @@
 
 -- +migrate Up
-CREATE TABLE seats (
+CREATE TABLE if not exists seats (
                        id INT PRIMARY KEY AUTO_INCREMENT,
                        `row` CHAR(1) NOT NULL,
                        number INT NOT NULL,

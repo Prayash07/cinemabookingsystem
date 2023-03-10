@@ -1,6 +1,6 @@
 
 -- +migrate Up
-CREATE TABLE reserved_seat (
+CREATE TABLE if not exists reserved_seat (
                                id INT PRIMARY KEY AUTO_INCREMENT,
                                booking_id INT NOT NULL,
                                seat_id INT NOT NULL,

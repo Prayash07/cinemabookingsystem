@@ -1,6 +1,6 @@
 
 -- +migrate Up
-CREATE TABLE bookings (
+CREATE TABLE if not exists bookings (
 
                           id INT PRIMARY KEY AUTO_INCREMENT,
                           screening_id INT NOT NULL,
