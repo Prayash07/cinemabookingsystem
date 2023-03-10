@@ -1,0 +1,4 @@
+development:
+  dialect: mysql
+  datasource: root:root1234@tcp(127.0.0.1:3306)/cinema_booking_system?parseTime=true
+  dir: migrations/
