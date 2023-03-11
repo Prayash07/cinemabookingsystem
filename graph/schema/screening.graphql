@@ -1,0 +1,6 @@
+type Screening{
+    id:ID!
+    film: Film!
+    room: Room!
+    start_time: String
+}

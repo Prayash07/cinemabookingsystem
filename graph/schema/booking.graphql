@@ -1,0 +1,5 @@
+type Booking{
+    id: ID!
+    screening: Screening!
+    customer: Customer!
+}
