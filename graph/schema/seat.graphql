@@ -1,6 +1,0 @@
-type Seat{
-    id:ID!
-    row: Int!
-    number: Int!
-    room: Room!
-}

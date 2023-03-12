@@ -1,5 +1,0 @@
-type ReservedSeat{
-    id: ID!
-    booking: Booking!
-    seat:Seat!
-}

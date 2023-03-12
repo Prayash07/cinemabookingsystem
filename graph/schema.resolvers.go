@@ -11,14 +11,44 @@ import (
 	"github.com/Prayash07/cinemabookingsystem/graph/model"
 )
 
-// CreateTodo is the resolver for the createTodo field.
-func (r *mutationResolver) CreateTodo(ctx context.Context, input model.NewTodo) (*model.Todo, error) {
-	panic(fmt.Errorf("not implemented: CreateTodo - createTodo"))
+// SetCustomer is the resolver for the setCustomer field.
+func (r *mutationResolver) SetCustomer(ctx context.Context, input model.CustomerObject) (*model.Customer, error) {
+	panic(fmt.Errorf("not implemented: SetCustomer - setCustomer"))
 }
 
-// Todos is the resolver for the todos field.
-func (r *queryResolver) Todos(ctx context.Context) ([]*model.Todo, error) {
-	panic(fmt.Errorf("not implemented: Todos - todos"))
+// SetFilm is the resolver for the setFilm field.
+func (r *mutationResolver) SetFilm(ctx context.Context, input *model.FilmObject) (*model.Film, error) {
+	panic(fmt.Errorf("not implemented: SetFilm - setFilm"))
+}
+
+// Customers is the resolver for the customers field.
+func (r *queryResolver) Customers(ctx context.Context) ([]*model.Customer, error) {
+	panic(fmt.Errorf("not implemented: Customers - customers"))
+}
+
+// Customer is the resolver for the customer field.
+func (r *queryResolver) Customer(ctx context.Context, id string) (*model.Customer, error) {
+	panic(fmt.Errorf("not implemented: Customer - customer"))
+}
+
+// Films is the resolver for the films field.
+func (r *queryResolver) Films(ctx context.Context) ([]*model.Film, error) {
+	panic(fmt.Errorf("not implemented: Films - films"))
+}
+
+// Film is the resolver for the film field.
+func (r *queryResolver) Film(ctx context.Context, id string) (*model.Film, error) {
+	panic(fmt.Errorf("not implemented: Film - film"))
+}
+
+// Rooms is the resolver for the rooms field.
+func (r *queryResolver) Rooms(ctx context.Context) ([]*model.Room, error) {
+	panic(fmt.Errorf("not implemented: Rooms - rooms"))
+}
+
+// Room is the resolver for the room field.
+func (r *queryResolver) Room(ctx context.Context, id string) (*model.Room, error) {
+	panic(fmt.Errorf("not implemented: Room - room"))
 }
 
 // Mutation returns MutationResolver implementation.

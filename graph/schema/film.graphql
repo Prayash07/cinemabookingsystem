@@ -1,5 +1,0 @@
-type Film{
-    id: ID!
-    name: String!
-    length_min: Int!
-}

@@ -1,0 +1,73 @@
+type Query{
+    customers: [Customer!]!
+    customer(id:ID!):Customer
+    films:[Film!]!
+    film(id:ID!):Film!
+    rooms:[Room!]!
+    room(id:ID!):Room!
+}
+
+type Mutation{
+    setCustomer(input:CustomerObject!):Customer!
+    setFilm(input:FilmObject):Film!
+}
+
+type Booking{
+    id: ID!
+    screening: Screening!
+    customer: Customer!
+}
+
+type Customer{
+    id: ID!
+    first_name: String
+    last_name: String!
+    email: String!
+}
+
+input CustomerObject{
+    first_name: String
+    last_name:String!
+    email: String!
+}
+
+type Film{
+    id: ID!
+    name: String!
+    length_min: Int!
+}
+
+input FilmObject{
+    name: String!
+    length_min: Int!
+}
+
+type ReservedSeat{
+    id: ID!
+    booking: Booking!
+    seat:Seat!
+}
+
+type Room{
+    id:ID!
+    name: String!
+    no_seats: Int!
+}
+
+input RoomObject{
+    name: String!,
+    no_seats: Int!
+}
+type Screening{
+    id:ID!
+    film: Film!
+    room: Room!
+    start_time: String
+}
+
+type Seat{
+    id:ID!
+    row: Int!
+    number: Int!
+    room: Room!
+}
